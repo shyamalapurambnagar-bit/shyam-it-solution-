@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shyam IT Solution | Computer Institute</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#063b88,#0878d1);
+    color:white;
+    padding:16px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd43b;
+}
+
+/* HERO */
+.hero{
+    min-height:580px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,44,100,.85),rgba(0,92,170,.85));
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:21px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    background:#ffd43b;
+    color:#111;
+    text-decoration:none;
+    border:none;
+    border-radius:7px;
+    font-weight:bold;
+    cursor:pointer;
+    margin:5px;
+}
+
+.btn:hover{
+    background:#ffbd00;
+}
+
+/* SECTIONS */
+section{
+    padding:65px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    color:#073d8d;
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+/* ABOUT */
+.about{
+    background:white;
+}
+
+.about-text{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* COURSES */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:28px 20px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#0865b7;
+    margin-bottom:12px;
+}
+
+/* ADMISSION */
+.admission{
+    background:linear-gradient(135deg,#073d8d,#0878d1);
+}
+
+.admission .title h2,
+.admission .title p{
+    color:white;
+}
+
+.form-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 5px 25px rgba(0,0,0,.2);
+}
+
+.form-group{
+    margin-bottom:17px;
+}
+
+label{
+    display:block;
+    margin-bottom:7px;
+    font-weight:bold;
+    color:#333;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:7px;
+    font-size:15px;
+}
+
+textarea{
+    min-height:100px;
+    resize:vertical;
+}
+
+/* PHOTO */
+.photo-preview{
+    width:130px;
+    height:150px;
+    border:2px dashed #aaa;
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    background:#f7f7f7;
+    color:#888;
+}
+
+.photo-preview img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* CONTACT */
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:14px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-box p{
+    margin:15px 0;
+    font-size:17px;
+}
+
+.contact-box a{
+    color:#0764b5;
+}
+
+/* FOOTER */
+footer{
+    background:#062957;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    header{
+        flex-direction:column;
+        gap:14px;
+    }
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        margin:0 5px;
+        font-size:13px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+        Shyam IT Solution
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+    <div>
+
+        <h1>Shyam IT Solution</h1>
+
+        <p>
+            बेहतर Computer Education और बेहतर Career का पहला कदम
+        </p>
+
+        <a href="#admission" class="btn">
+            Admission Open
+        </a>
+
+        <a href="#courses" class="btn">
+            Our Courses
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="title">
+
+        <h2>About Shyam IT Solution</h2>
+
+        <p>हमारे संस्थान के बारे में</p>
+
+    </div>
+
+    <div class="about-text">
+
+        <p>
+            <b>Shyam IT Solution</b> एक Computer Education Institute है,
+            जहाँ विद्यार्थियों को Computer और Technology से संबंधित
+            practical एवं उपयोगी शिक्षा प्रदान की जाती है।
+        </p>
+
+        <br>
+
+        <p>
+            हमारा उद्देश्य विद्यार्थियों को बेहतर computer skills
+            प्रदान करके उनके education और career को मजबूत बनाना है।
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- COURSES -->
+<section id="courses">
+
+    <div class="title">
+
+        <h2>Our Courses</h2>
+
+        <p>हमारे उपलब्ध Courses</p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>CCC</h3>
+            <p>Computer Concept की जानकारी और practical training.</p>
+        </div>
+
+        <div class="card">
+            <h3>Tally</h3>
+            <p>Accounting और Tally software की training.</p>
+        </div>
+
+        <div class="card">
+            <h3>DCA</h3>
+            <p>Diploma in Computer Application.</p>
+        </div>
+
+        <div class="card">
+            <h3>ADCA</h3>
+            <p>Advanced Diploma in Computer Application.</p>
+        </div>
+
+        <div class="card">
+            <h3>PGDCA</h3>
+            <p>Post Graduate Diploma in Computer Application.</p>
+        </div>
+
+        <div class="card">
+            <h3>NTT</h3>
+            <p>Nursery Teacher Training course.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Designing</h3>
+            <p>HTML, CSS और JavaScript की practical training.</p>
+        </div>
+
+        <div class="card">
+            <h3>Other Courses</h3>
+            <p>अन्य Computer एवं skill-based courses.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ADMISSION -->
+<section class="admission" id="admission">
+
+    <div class="title">
+
+        <h2>Online Admission Form</h2>
+
+        <p>
+            Admission के लिए नीचे दिया गया form भरें
+        </p>
+
+    </div>
+
+
+    <div class="form-box">
+
+        <form id="admissionForm">
+
+            <!-- NAME -->
+            <div class="form-group">
+
+                <label>
+                    विद्यार्थी का नाम *
+                </label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="अपना पूरा नाम लिखें"
+                    required
+                >
+
+            </div>
+
+
+            <!-- FATHER -->
+            <div class="form-group">
+
+                <label>
+                    पिता का नाम *
+                </label>
+
+                <input
+                    type="text"
+                    id="fatherName"
+                    placeholder="पिता का नाम"
+                    required
+                >
+
+            </div>
+
+
+            <!-- MOTHER -->
+            <div class="form-group">
+
+                <label>
+                    माता का नाम *
+                </label>
+
+                <input
+                    type="text"
+                    id="motherName"
+                    placeholder="माता का नाम"
+                    required
+                >
+
+            </div>
+
+
+            <!-- MOBILE -->
+            <div class="form-group">
+
+                <label>
+                    मोबाइल नंबर *
+                </label>
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="10 अंकों का मोबाइल नंबर"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                >
+
+            </div>
+
+
+            <!-- ADDRESS -->
+            <div class="form-group">
+
+                <label>
+                    पूरा पता *
+                </label>
+
+                <textarea
+                    id="address"
+                    placeholder="अपना पूरा पता लिखें"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <!-- COURSE -->
+            <div class="form-group">
+
+                <label>
+                    Course चुनें *
+                </label>
+
+                <select id="course" required>
+
+                    <option value="">
+                        -- Course Select करें --
+                    </option>
+
+                    <option>CCC</option>
+
+                    <option>Tally</option>
+
+                    <option>DCA</option>
+
+                    <option>ADCA</option>
+
+                    <option>PGDCA</option>
+
+                    <option>NTT</option>
+
+                    <option>Web Designing</option>
+
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- PHOTO -->
+            <div class="form-group">
+
+                <label>
+                    विद्यार्थी की Photo *
+                </label>
+
+                <input
+                    type="file"
+                    id="photo"
+                    accept="image/*"
+                    required
+                >
+
+                <div class="photo-preview" id="preview">
+                    Photo Preview
+                </div>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="btn"
+            >
+                Submit Admission Form
+            </button>
+
+            <a
+                href="https://wa.me/918601481582"
+                class="btn"
+                target="_blank"
+            >
+                WhatsApp Enquiry
+            </a>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <div class="title">
+
+        <h2>Contact Us</h2>
+
+        <p>हमसे संपर्क करें</p>
+
+    </div>
+
+
+    <div class="contact-box">
+
+        <p>
+            📍 <b>Address</b>
+        </p>
+
+        <p>
+            Masena, Mizapur, Ramnagar,<br>
+            Ambedkar Nagar,<br>
+            Near Singari Devi College
+        </p>
+
+
+        <p>
+            📞 <b>Mobile:</b>
+            <a href="tel:8601481582">
+                8601481582
+            </a>
+        </p>
+
+
+        <p>
+            📧 <b>Email:</b><br>
+
+            <a href="mailto:shyam.alapurambnagar@gmail.com">
+                shyam.alapurambnagar@gmail.com
+            </a>
+        </p>
+
+
+        <a
+            href="https://wa.me/918601481582"
+            class="btn"
+            target="_blank"
+        >
+            WhatsApp करें
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 Shyam IT Solution | All Rights Reserved
+    </p>
+
+    <p style="margin-top:8px;">
+        Masena, Mizapur, Ramnagar, Ambedkar Nagar
+    </p>
+
+</footer>
+
+
+<script>
+
+/* PHOTO PREVIEW */
+
+document
+.getElementById("photo")
+.addEventListener("change", function(event){
+
+    const file = event.target.files[0];
+
+    if(file){
+
+        const reader = new FileReader();
+
+        reader.onload = function(e){
+
+            document
+            .getElementById("preview")
+            .innerHTML =
+            '<img src="' +
+            e.target.result +
+            '" alt="Student Photo">';
+
+        };
+
+        reader.readAsDataURL(file);
+    }
+
+});
+
+
+/* ADMISSION FORM */
+
+document
+.getElementById("admissionForm")
+.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const name =
+    document.getElementById("studentName").value;
+
+    const father =
+    document.getElementById("fatherName").value;
+
+    const mother =
+    document.getElementById("motherName").value;
+
+    const mobile =
+    document.getElementById("mobile").value;
+
+    const address =
+    document.getElementById("address").value;
+
+    const course =
+    document.getElementById("course").value;
+
+
+    /* WhatsApp message */
+
+    const message =
+    "SHYAM IT SOLUTION - ADMISSION ENQUIRY\n\n" +
+
+    "Student Name: " + name + "\n" +
+
+    "Father Name: " + father + "\n" +
+
+    "Mother Name: " + mother + "\n" +
+
+    "Mobile: " + mobile + "\n" +
+
+    "Address: " + address + "\n" +
+
+    "Course: " + course;
+
+
+    const whatsappURL =
+    "https://wa.me/918601481582?text=" +
+    encodeURIComponent(message);
+
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
